@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Служебные расходы — март–август 2026 · EGGHEADS</title>
+  <style id="eh-logo-style">
+.eh-logo{--eh-ink:#000;--eh-accent:#FF0000;--eh-ink-60:#666;--eh-font:'Helvetica Neue',Arial,sans-serif;--eh-ease:cubic-bezier(.2,.8,.2,1);display:inline-flex;align-items:center;gap:10px;position:relative;text-decoration:none;color:var(--eh-ink);-webkit-tap-highlight-color:transparent}
+.eh-logo--invert{--eh-ink:#fff;--eh-ink-60:rgba(255,255,255,.6)}
+.eh-head{position:relative;width:24px;height:24px;flex:0 0 24px;display:block;overflow:visible}
+.eh-head svg{width:100%;height:100%;display:block;overflow:visible;fill:var(--eh-ink);transform-origin:50% 50%}
+.eh-logo:hover .eh-head svg{animation:eh-spin .72s var(--eh-ease) both}
+@keyframes eh-spin{0%{transform:rotate(0deg)}68%{transform:rotate(372deg)}84%{transform:rotate(354deg)}100%{transform:rotate(360deg)}}
+.eh-head.is-burnout{animation:eh-drive 1.7s cubic-bezier(.4,0,.22,1) forwards;z-index:60}
+.eh-head.is-burnout svg{animation:eh-wheel 1.7s cubic-bezier(.4,0,.22,1) forwards !important}
+@keyframes eh-wheel{0%{transform:rotate(0)}7%{transform:rotate(-34deg)}20%{transform:rotate(-22deg)}100%{transform:rotate(2160deg)}}
+@keyframes eh-drive{0%{transform:translateX(0)}7%{transform:translateX(-9px)}20%{transform:translateX(-9px)}80%{opacity:1}100%{transform:translateX(680px);opacity:0}}
+.eh-smoke{position:absolute;left:4px;bottom:0;border-radius:50%;background:rgba(0,0,0,.16);pointer-events:none;z-index:59}
+.eh-logo--invert .eh-smoke{background:rgba(255,255,255,.22)}
+@keyframes eh-smoke{0%{opacity:.34;transform:translate(0,0) scale(.35)}100%{opacity:0;transform:translate(-48px,-20px) scale(1.7)}}
+@media (prefers-reduced-motion:reduce){.eh-logo:hover .eh-head svg,.eh-head.is-burnout,.eh-head.is-burnout svg{animation:none !important}}
+.eh-text{display:flex;align-items:flex-end;min-width:0}
+.eh-wordmark{height:20px;width:auto;display:block;flex:0 0 auto;fill:var(--eh-ink)}
+.eh-div{width:2px;height:18px;background:var(--eh-ink);opacity:.5;display:block;flex:0 0 auto;margin:0 16px}
+.eh-tag{font-family:var(--eh-font);font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--eh-ink-60);white-space:nowrap}
+  </style>
+  <style>
+:root {
+  --page-bg: #f5f5f7;
+  --surface: #ffffff;
+  --hero-from: #fafafa;
+  --hero-to: #f0f0f5;
+  --card-bg: #ffffff;
+  --text: #1d1d1f;
+  --muted: #666;
+  --muted-light: #86868b;
+  --border: #e5e5e5;
+  --accent: #FF0000;
+  --dark: #1d1d1f;
+  --shadow: 0 4px 24px rgba(0,0,0,.06);
+  --shadow-hover: 0 12px 40px rgba(0,0,0,.12);
+  --button-secondary: #f5f5f7;
+  --button-secondary-hover: #e8e8ed;
+}
+[data-theme="dark"] {
+  --page-bg: #0f1014;
+  --surface: #181a20;
+  --hero-from: #181a20;
+  --hero-to: #111217;
+  --card-bg: #181a20;
+  --text: #f5f5f7;
+  --muted: #c7c7cf;
+  --muted-light: #a6a6ad;
+  --border: rgba(255,255,255,.12);
+  --accent: #FF0000;
+  --dark: #f5f5f7;
+  --shadow: 0 4px 24px rgba(0,0,0,.28);
+  --shadow-hover: 0 12px 40px rgba(0,0,0,.42);
+  --button-secondary: #23252d;
+  --button-secondary-hover: #2b2e38;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-width:320px;background:var(--page-bg);color:var(--text);font-family:'Helvetica Neue',Arial,sans-serif;transition:background .25s ease,color .25s ease;overflow-x:hidden}
+a{color:inherit}
+.site-header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 28px;position:sticky;top:0;z-index:100;transition:background .25s ease,border-color .25s ease}
+.header-inner{width:min(1180px,100%);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.site-header .eh-head{width:28px;height:28px;flex-basis:28px}
+.site-header .eh-wordmark{height:22px}
+.site-header .eh-div{height:20px;margin:0 12px}
+.site-header .eh-tag{font-size:11px}
+[data-theme="dark"] .site-header .eh-logo{--eh-ink:#fff;--eh-ink-60:rgba(255,255,255,.6)}
+.header-right{display:flex;align-items:center;justify-content:flex-end;gap:18px;min-width:0}
+.header-meta{text-align:right;min-width:0}
+.header-title{font-size:15px;font-weight:800;letter-spacing:0;white-space:nowrap}
+.header-sub{margin-top:3px;font-size:12px;color:var(--muted-light);white-space:nowrap}
+.theme-toggle{appearance:none;border:1px solid var(--border);background:var(--button-secondary);color:var(--text);border-radius:999px;padding:8px 12px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font:700 13px/1 'Helvetica Neue',Arial,sans-serif;transition:background .2s ease,border-color .2s ease,transform .2s ease;white-space:nowrap}
+.theme-toggle:hover{background:var(--button-secondary-hover);transform:translateY(-1px)}
+.theme-toggle:focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 38%,transparent);outline-offset:3px}
+.theme-toggle-icon{width:17px;display:inline-flex;justify-content:center}
+.report-main{width:min(1180px,calc(100% - 56px));margin:0 auto;padding:32px 0 48px}
+.report-section{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow);padding:24px;margin:0 0 20px}
+.site-footer{background:#111114;color:#fff;padding:34px 32px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-inner{width:min(1180px,100%);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-footer .eh-head{width:28px;height:28px;flex-basis:28px}
+.site-footer .eh-wordmark{height:22px}
+.footer-note{color:rgba(255,255,255,.66);font-size:13px;text-align:right}
+@media (max-width:980px){
+  .site-header .eh-tag,.site-header .eh-div{display:none}
+  .header-sub{display:none}
+}
+@media (max-width:640px){
+  .site-header{padding:18px}
+  .header-inner{gap:14px;align-items:flex-start}
+  .site-header .eh-head{width:28px;height:28px;flex-basis:28px}
+  .site-header .eh-wordmark{height:21px;max-width:148px}
+  .header-right{gap:10px;flex-direction:column;align-items:flex-end}
+  .header-title{font-size:13px}
+  .theme-toggle{padding:7px 10px;font-size:12px}
+  .report-main{width:min(100% - 32px,420px);padding:24px 0 36px}
+  .report-section{padding:18px}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+  .site-footer .eh-tag,.site-footer .eh-div{display:none}
+  .footer-note{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;scroll-behavior:auto !important;transition-duration:.01ms !important}
+}
+  </style>
+
+<style>
+.hero{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin:20px 0 28px}.eyebrow{color:#28705b;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;font-weight:750;margin:0 0 8px}.hero h1{margin:0;font-size:clamp(2rem,4vw,3.35rem);color:#18324b}.lead{max-width:650px;color:#58687a;font-size:1.06rem}.status{padding:15px 18px;border-radius:12px;background:#e8f3ee;color:#1e5e4b;text-align:right;line-height:1.5;white-space:nowrap}.cards,.grid{display:grid;gap:16px}.cards{grid-template-columns:repeat(3,1fr);margin-bottom:22px}.grid.two{grid-template-columns:1.1fr .9fr;margin:20px 0}.card,.panel{background:#fff;border:1px solid #e3e9ee;border-radius:14px;padding:22px;box-shadow:0 3px 13px rgba(24,50,75,.06)}.card{border-top:5px solid #1d70a2}.card.income{border-top-color:#1f9e89}.card.expense{border-top-color:#d58435}.card.balance{border-top-color:#1d70a2}.card span,.card small{display:block;color:#627487}.card strong{display:block;color:#18324b;font-size:1.75rem;margin:10px 0}.panel-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #e6ebf0;margin-bottom:14px}.panel h2{margin:0 0 14px;color:#18324b;font-size:1.2rem}.panel-head span{color:#738292;font-size:.8rem}table{width:100%;border-collapse:collapse}th{text-align:left;color:#627487;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;padding:8px;border-bottom:1px solid #dfe7ed}td{padding:10px 8px;border-bottom:1px solid #edf1f4;font-variant-numeric:tabular-nums}td:not(:first-child),th:not(:first-child){text-align:right}.positive{color:#19745d;font-weight:700}.negative{color:#b4493f;font-weight:700}.category{margin:0 0 15px}.category-name{display:flex;justify-content:space-between;gap:8px;font-size:.91rem;color:#384b5c}.category-name strong{font-variant-numeric:tabular-nums;color:#18324b}.bar-bg{height:9px;background:#e9eff3;border-radius:8px;margin:7px 0 3px;overflow:hidden}.bar{height:100%;background:#1d70a2;border-radius:8px}.category small{color:#788999}.highlight{border-left:5px solid #1f9e89}.alert{border-left:5px solid #d58435;background:#fffdf9}.panel li,.panel p{color:#506174;line-height:1.5}.panel li{margin:.6rem 0}.note{margin:22px 0 8px;padding:16px 18px;border-radius:10px;background:#f1f5f7;color:#506174;line-height:1.55}@media(max-width:760px){.hero{display:block}.status{display:inline-block;margin-top:14px;text-align:left}.cards,.grid.two{grid-template-columns:1fr}.card strong{font-size:1.45rem}.table-wrap{overflow:auto}}
+</style>
+
+<style>
+.monthly-operations{margin-top:20px}.monthly-operations .panel-head{align-items:flex-start}.monthly-operations .panel-head p{margin:-7px 0 12px;color:#627487;font-size:.92rem}.month-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 18px}.month-tab{appearance:none;border:1px solid #cfdce5;background:#f4f7f9;color:#385166;padding:9px 15px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer}.month-tab:hover{background:#e8f1f5}.month-tab.active{border-color:#1d70a2;background:#1d70a2;color:#fff}.month-summary{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 14px}.month-summary span{background:#f1f6f8;border-radius:8px;padding:8px 11px;color:#566b7d;font-size:.9rem}.month-summary strong{color:#18324b}.operations-table td:nth-child(3),.operations-table th:nth-child(3){text-align:left;min-width:300px}.operations-table td:not(:first-child),.operations-table th:not(:first-child){text-align:right}.operations-table td:nth-child(2),.operations-table th:nth-child(2){text-align:left}.kind{display:inline-block;padding:3px 7px;border-radius:6px;font-size:.78rem;font-weight:700;white-space:nowrap}.income-kind{background:#e3f3eb;color:#1f7056}.expense-kind{background:#fce8d5;color:#9a591c}.balance-cell{font-weight:700;color:#18324b}@media (max-width:700px){.monthly-operations{padding:16px}.month-tabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.month-tab{white-space:nowrap}.month-summary{display:grid;grid-template-columns:1fr}.operations-table td:nth-child(3),.operations-table th:nth-child(3){min-width:220px}}
+</style>
+</head>
+<body data-theme="light" id="top">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="eh-logo" href="#report-main" aria-label="EGGHEADS · Служебные расходы — март–август 2026">
+        <span class="eh-head" aria-hidden="true">
+          <svg viewBox="0 0 512 512" focusable="false"><path d="M255.3,217c-19.1,0-34.7,15.5-34.7,34.7h69.4C289.9,232.5,274.4,217,255.3,217z"/><path d="M256,0C114.7,0,0,114.7,0,256c0,141.3,114.7,256,256,256c141.3,0,256-114.5,256-256S397.3,0,256,0z M345.8,316.3v83.2c-26.4,16.9-57.7,26.8-91.3,26.8c-94.1,0-170.3-76.2-170.3-170.3c0-94.1,76.2-170.3,170.3-170.3 c18,0,35.4,2.9,51.8,8.1l84.5,222.5H345.8z"/></svg>
+        </span>
+        <span class="eh-text">
+          <svg class="eh-wordmark" viewBox="21.69 95.83 1008.52 129.2" role="img" aria-label="EGGHEADS"><path d="M119.46,221.54H21.69V99.33H117.02v28.98H55.74v17.46h57.79v28.11H55.74v18.51h63.73v29.16Zm106.32-86.08c-8.9-8.38-19.73-10.65-27.94-10.65-19.9,0-32.82,11.87-32.82,35.79,0,15.71,8.2,35.09,32.82,35.09,6.46,0,16.59-1.22,23.57-6.28v-16.52s9.98,0,9.98,0l-9.98-26.26h28.81v54.3c-7.68,15.54-28.98,23.92-52.55,23.92-48.36,0-66.69-32.3-66.69-64.25s20.95-64.77,66.87-64.77c9.76,0,18.88,1.16,27.94,5.25,6.66,3.01,13.27,7.6,20.08,14.48l-20.08,19.9Zm131.98,0c-8.9-8.38-19.73-10.65-27.94-10.65-19.9,0-32.82,11.87-32.82,35.79,0,15.71,8.2,35.09,32.82,35.09,6.46,0,16.59-1.22,23.57-6.28v-16.52s9.98,0,9.98,0l-9.98-26.26h28.81v54.3c-7.68,15.54-28.98,23.92-52.55,23.92-48.36,0-66.69-32.3-66.69-64.25s20.95-64.77,66.87-64.77c9.76,0,18.88,1.16,27.94,5.25,6.66,3.01,13.27,7.6,20.08,14.48l-20.08,19.9Zm122.55,86.25v-46.27h-44v46.27h-34.57V99.5h34.57v46.44h44v-46.44h34.22v122.22h-34.22Zm143.68-.18h-84.69V99.33h95.33v28.98h-61.29v17.46h57.79v28.11h-57.79v18.51h63.73l-13.08,29.16Zm116.95-20.08h-54.65l-8.03,20.08h-36.67l54.82-122.22h34.92l54.65,122.22h-37.01l-8.03-20.08Zm-27.23-67.92l-15.71,38.93h31.25l-15.54-38.93Zm134.42-34.22c43.12,0,63.9,26.54,63.9,60.23s-20.08,61.98-63.9,61.98h-52.38V99.33h52.38Zm-18.16,93.06h18.16c22,0,29.68-16.41,29.68-33.17s-8.55-31.08-29.68-31.08h-18.16v64.25Zm175.63-59.19c-8.38-6.29-17.98-8.38-28.64-8.38-8.38,0-16.59,2.62-16.59,9.08,0,8.38,8.21,9.6,20.25,10.83,24.27,2.62,49.59,12.39,49.59,40.5s-26.19,39.63-53.61,39.81c-22,.17-37.71-3.67-54.65-21.48l19.03-21.82c12.05,11.7,25.49,13.79,35.79,13.79,11.35,0,19.21-4.02,19.21-10.83,0-6.11-6.98-9.95-20.43-11.17-26.71-2.45-49.76-9.25-49.76-39.63,0-25.84,25.31-37.01,51.16-37.01,18.33,0,32.65,4.19,45.74,14.49l-17.11,21.82Z"/></svg>
+          <span class="eh-div" aria-hidden="true"></span>
+          <span class="eh-tag">ЦИФРОВЫЕ СОТРУДНИКИ</span>
+        </span>
+      </a>
+      <div class="header-right">
+        <div class="header-meta">
+          <div class="header-title">Служебные расходы — март–август 2026</div>
+          <div class="header-sub">Сверка расходов, поступлений и чеков</div>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Переключить тему" aria-pressed="false">
+          <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle-text">Светлая</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="report-main" id="report-main">
+  <section class="hero"><div><p class="eyebrow">Управленческий обзор · март–август 2026</p><h1>Служебные расходы</h1><p class="lead">Движение средств, структура расходов и построчный журнал операций по месяцам.</p></div><div class="status">Данные обновлены<br><strong>21 августа 2026</strong></div></section>
+  <section class="cards">
+    <article class="card income"><span>Поступило</span><strong>509 000,00 ₽</strong><small>Включая 20 000 ₽ от 03.08</small></article>
+    <article class="card expense"><span>Потрачено</span><strong>499 489,50 ₽</strong><small>По актуальной исходной книге</small></article>
+    <article class="card balance"><span>Остаток периода</span><strong>9 510,50 ₽</strong><small>Поступления минус расходы</small></article>
+  </section>
+  <section class="grid two">
+    <article class="panel"><div class="panel-head"><h2>Движение по месяцам</h2><span>рубли</span></div><div class="table-wrap"><table><thead><tr><th>Месяц</th><th>Поступило</th><th>Потрачено</th><th>Сальдо</th></tr></thead><tbody><tr><td>Март</td><td>34 000,00 ₽</td><td>27 244,50 ₽</td><td class="positive">6 755,50 ₽</td></tr><tr><td>Апрель</td><td>45 000,00 ₽</td><td>51 851,50 ₽</td><td class="negative">-6 851,50 ₽</td></tr><tr><td>Май</td><td>110 000,00 ₽</td><td>79 148,50 ₽</td><td class="positive">30 851,50 ₽</td></tr><tr><td>Июнь</td><td>0,00 ₽</td><td>31 899,00 ₽</td><td class="negative">-31 899,00 ₽</td></tr><tr><td>Июль</td><td>300 000,00 ₽</td><td>287 726,00 ₽</td><td class="positive">12 274,00 ₽</td></tr><tr><td>Август</td><td>20 000,00 ₽</td><td>21 620,00 ₽</td><td class="negative">-1 620,00 ₽</td></tr></tbody></table></div></article>
+    <article class="panel"><div class="panel-head"><h2>Структура расходов</h2><span>по категориям</span></div><div class="category"><div class="category-name"><span>IT и связь</span><strong>211 200,00 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:100.0%"></div></div><small>42.3% от расходов</small></div><div class="category"><div class="category-name"><span>Помещение и хозяйство</span><strong>101 256,00 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:47.9%"></div></div><small>20.3% от расходов</small></div><div class="category"><div class="category-name"><span>Юридические расходы</span><strong>82 626,00 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:39.1%"></div></div><small>16.5% от расходов</small></div><div class="category"><div class="category-name"><span>Персонал</span><strong>62 000,00 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:29.4%"></div></div><small>12.4% от расходов</small></div><div class="category"><div class="category-name"><span>Подбор персонала</span><strong>27 292,50 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:12.9%"></div></div><small>5.5% от расходов</small></div><div class="category"><div class="category-name"><span>Книги и материалы</span><strong>8 500,00 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:4.0%"></div></div><small>1.7% от расходов</small></div><div class="category"><div class="category-name"><span>Прочее / уточняется</span><strong>6 615,00 ₽</strong></div><div class="bar-bg"><div class="bar" style="width:3.1%"></div></div><small>1.3% от расходов</small></div></article>
+  </section>
+  <section class="panel monthly-operations"><div class="panel-head"><div><h2>Операции и остатки по месяцам</h2><p>Остаток показан после каждой операции.</p></div><span>рубли</span></div><div class="month-tabs" role="tablist" aria-label="Месяцы"><button class="month-tab active" type="button" role="tab" aria-selected="true" aria-controls="month-3" data-month="3">Март</button><button class="month-tab" type="button" role="tab" aria-selected="false" aria-controls="month-4" data-month="4">Апрель</button><button class="month-tab" type="button" role="tab" aria-selected="false" aria-controls="month-5" data-month="5">Май</button><button class="month-tab" type="button" role="tab" aria-selected="false" aria-controls="month-6" data-month="6">Июнь</button><button class="month-tab" type="button" role="tab" aria-selected="false" aria-controls="month-7" data-month="7">Июль</button><button class="month-tab" type="button" role="tab" aria-selected="false" aria-controls="month-8" data-month="8">Август</button></div><div class="month-tab-panel" id="month-3" role="tabpanel"><div class="month-summary"><span>Остаток на начало: <strong>0,00 ₽</strong></span><span>Расходы за месяц: <strong>27 244,50 ₽</strong></span><span>Остаток на конец: <strong>6 755,50 ₽</strong></span></div><div class="table-wrap"><table class="operations-table"><thead><tr><th>Дата</th><th>Тип</th><th>Описание</th><th>Поступило</th><th>Расход</th><th>Остаток</th></tr></thead><tbody><tr><td>06.03</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 06.03.2026</td><td>20 000,00 ₽</td><td>—</td><td class="balance-cell">20 000,00 ₽</td></tr><tr><td>06.03</td><td><span class="kind expense-kind">Расход</span></td><td>06.03 Оплата размещения вакансии водителя на Авито</td><td>—</td><td>841,00 ₽</td><td class="balance-cell">19 159,00 ₽</td></tr><tr><td>06.03</td><td><span class="kind expense-kind">Расход</span></td><td>06.03 Оплата размещения вакансии водителя на Помогатель.ру</td><td>—</td><td>3 139,50 ₽</td><td class="balance-cell">16 019,50 ₽</td></tr><tr><td>12.03</td><td><span class="kind expense-kind">Расход</span></td><td>12.03 Подготовка возражения об отмене судебного приказа Думанского</td><td>—</td><td>2 000,00 ₽</td><td class="balance-cell">14 019,50 ₽</td></tr><tr><td>17.03</td><td><span class="kind expense-kind">Расход</span></td><td>17.03 Оплата подготовки доверенности от Думанского на С.Пахомову и юристов</td><td>—</td><td>3 500,00 ₽</td><td class="balance-cell">10 519,50 ₽</td></tr><tr><td>17.03</td><td><span class="kind expense-kind">Расход</span></td><td>17.03 Пополнение криптокошелька (покупка письма царя Филиппа)</td><td>—</td><td>1 000,00 ₽</td><td class="balance-cell">9 519,50 ₽</td></tr><tr><td>20.03</td><td><span class="kind expense-kind">Расход</span></td><td>20.03 Заказ детализации расчетов в Мосэнергосбыт</td><td>—</td><td>1 580,00 ₽</td><td class="balance-cell">7 939,50 ₽</td></tr><tr><td>25.03</td><td><span class="kind expense-kind">Расход</span></td><td>25.03 Покупка книги Планирование и контроль на Авито</td><td>—</td><td>615,00 ₽</td><td class="balance-cell">7 324,50 ₽</td></tr><tr><td>25.03</td><td><span class="kind expense-kind">Расход</span></td><td>25.03 Покупка книги Эффективное производство в России? Да! На Авито</td><td>—</td><td>569,00 ₽</td><td class="balance-cell">6 755,50 ₽</td></tr><tr><td>26.03</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 26.03.2026</td><td>14 000,00 ₽</td><td>—</td><td class="balance-cell">20 755,50 ₽</td></tr><tr><td>26.03</td><td><span class="kind expense-kind">Расход</span></td><td>26.03 Оплата пробного рабочего дня водителя (Александр)</td><td>—</td><td>7 000,00 ₽</td><td class="balance-cell">13 755,50 ₽</td></tr><tr><td>31.03</td><td><span class="kind expense-kind">Расход</span></td><td>31.03 Оплата пробного рабочего дня водителя (Хабиб)</td><td>—</td><td>7 000,00 ₽</td><td class="balance-cell">6 755,50 ₽</td></tr></tbody></table></div></div><div class="month-tab-panel" id="month-4" role="tabpanel" hidden><div class="month-summary"><span>Остаток на начало: <strong>6 755,50 ₽</strong></span><span>Расходы за месяц: <strong>51 851,50 ₽</strong></span><span>Остаток на конец: <strong>-96,00 ₽</strong></span></div><div class="table-wrap"><table class="operations-table"><thead><tr><th>Дата</th><th>Тип</th><th>Описание</th><th>Поступило</th><th>Расход</th><th>Остаток</th></tr></thead><tbody><tr><td>02.04</td><td><span class="kind expense-kind">Расход</span></td><td>02.04 Подготовка возражения юристом на судебный приказ Думанского</td><td>—</td><td>1 000,00 ₽</td><td class="balance-cell">5 755,50 ₽</td></tr><tr><td>02.04</td><td><span class="kind expense-kind">Расход</span></td><td>02.04 Подготовка претензии юристом в Мосэнергосбыт</td><td>—</td><td>2 000,00 ₽</td><td class="balance-cell">3 755,50 ₽</td></tr><tr><td>03.04</td><td><span class="kind expense-kind">Расход</span></td><td>03.04 Отправка претензии в Мосэнергосбыт почтой РФ</td><td>—</td><td>245,00 ₽</td><td class="balance-cell">3 510,50 ₽</td></tr><tr><td>06.04</td><td><span class="kind expense-kind">Расход</span></td><td>06.04 Размещение вакансии водителя на Авито</td><td>—</td><td>1 093,00 ₽</td><td class="balance-cell">2 417,50 ₽</td></tr><tr><td>14.04</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 14.04.2026</td><td>20 000,00 ₽</td><td>—</td><td class="balance-cell">22 417,50 ₽</td></tr><tr><td>14.04</td><td><span class="kind expense-kind">Расход</span></td><td>14.04 Оплата полиграфа (водитель Хабиб)</td><td>—</td><td>10 000,00 ₽</td><td class="balance-cell">12 417,50 ₽</td></tr><tr><td>21.04</td><td><span class="kind expense-kind">Расход</span></td><td>21.04 Оплата исполнительского сбора в ФССП</td><td>—</td><td>1 500,00 ₽</td><td class="balance-cell">10 917,50 ₽</td></tr><tr><td>24.04</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 24.04</td><td>25 000,00 ₽</td><td>—</td><td class="balance-cell">35 917,50 ₽</td></tr><tr><td>25.04</td><td><span class="kind expense-kind">Расход</span></td><td>25.04 Оплата судебной госпошлины</td><td>—</td><td>24 800,00 ₽</td><td class="balance-cell">11 117,50 ₽</td></tr><tr><td>27.04</td><td><span class="kind expense-kind">Расход</span></td><td>27.04 Оплата рабочего дня Хабиба (20.04)</td><td>—</td><td>7 000,00 ₽</td><td class="balance-cell">4 117,50 ₽</td></tr><tr><td>27.04</td><td><span class="kind expense-kind">Расход</span></td><td>27.04 Размещение вакансии водителя на Авито</td><td>—</td><td>1 074,00 ₽</td><td class="balance-cell">3 043,50 ₽</td></tr><tr><td>27.04</td><td><span class="kind expense-kind">Расход</span></td><td>27.04 Размещение вакансии на Помогателе</td><td>—</td><td>3 139,50 ₽</td><td class="balance-cell">-96,00 ₽</td></tr></tbody></table></div></div><div class="month-tab-panel" id="month-5" role="tabpanel" hidden><div class="month-summary"><span>Остаток на начало: <strong>-96,00 ₽</strong></span><span>Расходы за месяц: <strong>79 148,50 ₽</strong></span><span>Остаток на конец: <strong>30 755,50 ₽</strong></span></div><div class="table-wrap"><table class="operations-table"><thead><tr><th>Дата</th><th>Тип</th><th>Описание</th><th>Поступило</th><th>Расход</th><th>Остаток</th></tr></thead><tbody><tr><td>02.05</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 02.05</td><td>20 000,00 ₽</td><td>—</td><td class="balance-cell">19 904,00 ₽</td></tr><tr><td>02.05</td><td><span class="kind expense-kind">Расход</span></td><td>02.05 Оплата рабочего дня Мирлана (01.05)</td><td>—</td><td>7 000,00 ₽</td><td class="balance-cell">12 904,00 ₽</td></tr><tr><td>02.05</td><td><span class="kind expense-kind">Расход</span></td><td>02.05 Покупка книг на Авито</td><td>—</td><td>7 285,00 ₽</td><td class="balance-cell">5 619,00 ₽</td></tr><tr><td>07.05</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 07.05.2026</td><td>20 000,00 ₽</td><td>—</td><td class="balance-cell">25 619,00 ₽</td></tr><tr><td>07.05</td><td><span class="kind expense-kind">Расход</span></td><td>07.05 Оплата полиграфа Мирлана</td><td>—</td><td>10 000,00 ₽</td><td class="balance-cell">15 619,00 ₽</td></tr><tr><td>20.05</td><td><span class="kind expense-kind">Расход</span></td><td>20.05 Размещение вакансии повара на Авито</td><td>—</td><td>1 169,00 ₽</td><td class="balance-cell">14 450,00 ₽</td></tr><tr><td>21.05</td><td><span class="kind expense-kind">Расход</span></td><td>21.05 Отправка доверенности Н. Кирюшкиной в Кострому</td><td>—</td><td>855,00 ₽</td><td class="balance-cell">13 595,00 ₽</td></tr><tr><td>22.05</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 22.05.2026</td><td>20 000,00 ₽</td><td>—</td><td class="balance-cell">33 595,00 ₽</td></tr><tr><td>23.05</td><td><span class="kind expense-kind">Расход</span></td><td>23.05 Заказ книг &quot;Человек сущий&quot;</td><td>—</td><td>8 500,00 ₽</td><td class="balance-cell">25 095,00 ₽</td></tr><tr><td>27.05</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 27.05.2026</td><td>50 000,00 ₽</td><td>—</td><td class="balance-cell">75 095,00 ₽</td></tr><tr><td>27.05</td><td><span class="kind expense-kind">Расход</span></td><td>27.05 Бронь отеля Воздвиженское</td><td>—</td><td>41 200,00 ₽</td><td class="balance-cell">33 895,00 ₽</td></tr><tr><td>28.05</td><td><span class="kind expense-kind">Расход</span></td><td>28.05 Размещение вакансии повара на помогателе</td><td>—</td><td>3 139,50 ₽</td><td class="balance-cell">30 755,50 ₽</td></tr></tbody></table></div></div><div class="month-tab-panel" id="month-6" role="tabpanel" hidden><div class="month-summary"><span>Остаток на начало: <strong>30 755,50 ₽</strong></span><span>Расходы за месяц: <strong>31 899,00 ₽</strong></span><span>Остаток на конец: <strong>-1 143,50 ₽</strong></span></div><div class="table-wrap"><table class="operations-table"><thead><tr><th>Дата</th><th>Тип</th><th>Описание</th><th>Поступило</th><th>Расход</th><th>Остаток</th></tr></thead><tbody><tr><td>02.06</td><td><span class="kind expense-kind">Расход</span></td><td>02.06 Подготовка возражения на судебный приказ ТА Михайленко</td><td>—</td><td>2 000,00 ₽</td><td class="balance-cell">28 755,50 ₽</td></tr><tr><td>08.06</td><td><span class="kind expense-kind">Расход</span></td><td>08.06 Подготовка второй претензии в Мосэнергосбыт от Думанского</td><td>—</td><td>2 000,00 ₽</td><td class="balance-cell">26 755,50 ₽</td></tr><tr><td>08.06</td><td><span class="kind expense-kind">Расход</span></td><td>08.06 Размещение вакансии повара на Авито</td><td>—</td><td>1 169,00 ₽</td><td class="balance-cell">25 586,50 ₽</td></tr><tr><td>09.06</td><td><span class="kind expense-kind">Расход</span></td><td>09.06 Отправка претензии Думанского в Мосэнергосбыт Почтой РФ</td><td>—</td><td>220,00 ₽</td><td class="balance-cell">25 366,50 ₽</td></tr><tr><td>15.06</td><td><span class="kind expense-kind">Расход</span></td><td>15.06 Оплата услуг юриста по представлению интересов Думанского в суде</td><td>—</td><td>20 000,00 ₽</td><td class="balance-cell">5 366,50 ₽</td></tr><tr><td>29.06</td><td><span class="kind expense-kind">Расход</span></td><td>29.06 Доплата госпошлины в связи с увеличением исковых требований к Фишкину</td><td>—</td><td>4 641,00 ₽</td><td class="balance-cell">725,50 ₽</td></tr><tr><td>29.06</td><td><span class="kind expense-kind">Расход</span></td><td>29.06 Оплата размещения вакансии повара на Авито</td><td>—</td><td>1 169,00 ₽</td><td class="balance-cell">-443,50 ₽</td></tr><tr><td>30.06</td><td><span class="kind expense-kind">Расход</span></td><td>30.06 Заказ выписки из ЕГРН по кв. (д.18 кв. 54)</td><td>—</td><td>700,00 ₽</td><td class="balance-cell">-1 143,50 ₽</td></tr></tbody></table></div></div><div class="month-tab-panel" id="month-7" role="tabpanel" hidden><div class="month-summary"><span>Остаток на начало: <strong>-1 143,50 ₽</strong></span><span>Расходы за месяц: <strong>287 726,00 ₽</strong></span><span>Остаток на конец: <strong>11 130,50 ₽</strong></span></div><div class="table-wrap"><table class="operations-table"><thead><tr><th>Дата</th><th>Тип</th><th>Описание</th><th>Поступило</th><th>Расход</th><th>Остаток</th></tr></thead><tbody><tr><td>01.07</td><td><span class="kind expense-kind">Расход</span></td><td>01.07 Размещение вакансии повара на Помогателе</td><td>—</td><td>2 890,00 ₽</td><td class="balance-cell">-4 033,50 ₽</td></tr><tr><td>08.07</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 08.07.2026</td><td>300 000,00 ₽</td><td>—</td><td class="balance-cell">295 966,50 ₽</td></tr><tr><td>08.07</td><td><span class="kind expense-kind">Расход</span></td><td>08.07 Оплата Эдуарду за ремонт водопроводной трубы</td><td>—</td><td>4 500,00 ₽</td><td class="balance-cell">291 466,50 ₽</td></tr><tr><td>09.07</td><td><span class="kind expense-kind">Расход</span></td><td>09.07 Оплата ЖКХ Клубная 8-14</td><td>—</td><td>51 056,00 ₽</td><td class="balance-cell">240 410,50 ₽</td></tr><tr><td>09.07</td><td><span class="kind expense-kind">Расход</span></td><td>09.07 Оплата личного кабинета EGGHEADS на 2 мес</td><td>—</td><td>39 800,00 ₽</td><td class="balance-cell">200 610,50 ₽</td></tr><tr><td>15.07</td><td><span class="kind expense-kind">Расход</span></td><td>15.07 Передано Александру на покупку 3х корпоративных телефонов</td><td>—</td><td>170 000,00 ₽</td><td class="balance-cell">30 610,50 ₽</td></tr><tr><td>17.07</td><td><span class="kind expense-kind">Расход</span></td><td>17.07 Оплата тестового дня повара</td><td>—</td><td>4 000,00 ₽</td><td class="balance-cell">26 610,50 ₽</td></tr><tr><td>28.07</td><td><span class="kind expense-kind">Расход</span></td><td>28.07 Оплата Эдуарду за ремонт трубы</td><td>—</td><td>4 500,00 ₽</td><td class="balance-cell">22 110,50 ₽</td></tr><tr><td>28.07</td><td><span class="kind expense-kind">Расход</span></td><td>28.07 Стразовка Ивану для мотолагеря</td><td>—</td><td>980,00 ₽</td><td class="balance-cell">21 130,50 ₽</td></tr><tr><td>31.07</td><td><span class="kind expense-kind">Расход</span></td><td>31.07 Оплата полиграфа повара</td><td>—</td><td>10 000,00 ₽</td><td class="balance-cell">11 130,50 ₽</td></tr></tbody></table></div></div><div class="month-tab-panel" id="month-8" role="tabpanel" hidden><div class="month-summary"><span>Остаток на начало: <strong>11 130,50 ₽</strong></span><span>Расходы за месяц: <strong>21 620,00 ₽</strong></span><span>Остаток на конец: <strong>9 510,50 ₽</strong></span></div><div class="table-wrap"><table class="operations-table"><thead><tr><th>Дата</th><th>Тип</th><th>Описание</th><th>Поступило</th><th>Расход</th><th>Остаток</th></tr></thead><tbody><tr><td>03.08</td><td><span class="kind income-kind">Поступление</span></td><td>Получено под отчет 03.08</td><td>20 000,00 ₽</td><td>—</td><td class="balance-cell">31 130,50 ₽</td></tr><tr><td>03.08</td><td><span class="kind expense-kind">Расход</span></td><td>03.08 Оплата услуг юристу по делу Думанского</td><td>—</td><td>20 000,00 ₽</td><td class="balance-cell">11 130,50 ₽</td></tr><tr><td>03.08</td><td><span class="kind expense-kind">Расход</span></td><td>03.08 оплата корпоративной мобильной связи (Светланы)</td><td>—</td><td>700,00 ₽</td><td class="balance-cell">10 430,50 ₽</td></tr><tr><td>06.08</td><td><span class="kind expense-kind">Расход</span></td><td>06.08 Почтовые расзоды на отправку претензии в Мосэнергосбыт</td><td>—</td><td>220,00 ₽</td><td class="balance-cell">10 210,50 ₽</td></tr><tr><td>19.08</td><td><span class="kind expense-kind">Расход</span></td><td>19.08 плата корпоративной мобильной связи (Светланы)</td><td>—</td><td>700,00 ₽</td><td class="balance-cell">9 510,50 ₽</td></tr></tbody></table></div></div></section>
+</main>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="eh-logo eh-logo--invert" href="#top" aria-label="EGGHEADS · Служебные расходы — март–август 2026">
+        <span class="eh-head" aria-hidden="true">
+          <svg viewBox="0 0 512 512" focusable="false"><path d="M255.3,217c-19.1,0-34.7,15.5-34.7,34.7h69.4C289.9,232.5,274.4,217,255.3,217z"/><path d="M256,0C114.7,0,0,114.7,0,256c0,141.3,114.7,256,256,256c141.3,0,256-114.5,256-256S397.3,0,256,0z M345.8,316.3v83.2c-26.4,16.9-57.7,26.8-91.3,26.8c-94.1,0-170.3-76.2-170.3-170.3c0-94.1,76.2-170.3,170.3-170.3 c18,0,35.4,2.9,51.8,8.1l84.5,222.5H345.8z"/></svg>
+        </span>
+        <span class="eh-text">
+          <svg class="eh-wordmark" viewBox="21.69 95.83 1008.52 129.2" role="img" aria-label="EGGHEADS"><path d="M119.46,221.54H21.69V99.33H117.02v28.98H55.74v17.46h57.79v28.11H55.74v18.51h63.73v29.16Zm106.32-86.08c-8.9-8.38-19.73-10.65-27.94-10.65-19.9,0-32.82,11.87-32.82,35.79,0,15.71,8.2,35.09,32.82,35.09,6.46,0,16.59-1.22,23.57-6.28v-16.52s9.98,0,9.98,0l-9.98-26.26h28.81v54.3c-7.68,15.54-28.98,23.92-52.55,23.92-48.36,0-66.69-32.3-66.69-64.25s20.95-64.77,66.87-64.77c9.76,0,18.88,1.16,27.94,5.25,6.66,3.01,13.27,7.6,20.08,14.48l-20.08,19.9Zm131.98,0c-8.9-8.38-19.73-10.65-27.94-10.65-19.9,0-32.82,11.87-32.82,35.79,0,15.71,8.2,35.09,32.82,35.09,6.46,0,16.59-1.22,23.57-6.28v-16.52s9.98,0,9.98,0l-9.98-26.26h28.81v54.3c-7.68,15.54-28.98,23.92-52.55,23.92-48.36,0-66.69-32.3-66.69-64.25s20.95-64.77,66.87-64.77c9.76,0,18.88,1.16,27.94,5.25,6.66,3.01,13.27,7.6,20.08,14.48l-20.08,19.9Zm122.55,86.25v-46.27h-44v46.27h-34.57V99.5h34.57v46.44h44v-46.44h34.22v122.22h-34.22Zm143.68-.18h-84.69V99.33h95.33v28.98h-61.29v17.46h57.79v28.11h-57.79v18.51h63.73l-13.08,29.16Zm116.95-20.08h-54.65l-8.03,20.08h-36.67l54.82-122.22h34.92l54.65,122.22h-37.01l-8.03-20.08Zm-27.23-67.92l-15.71,38.93h31.25l-15.54-38.93Zm134.42-34.22c43.12,0,63.9,26.54,63.9,60.23s-20.08,61.98-63.9,61.98h-52.38V99.33h52.38Zm-18.16,93.06h18.16c22,0,29.68-16.41,29.68-33.17s-8.55-31.08-29.68-31.08h-18.16v64.25Zm175.63-59.19c-8.38-6.29-17.98-8.38-28.64-8.38-8.38,0-16.59,2.62-16.59,9.08,0,8.38,8.21,9.6,20.25,10.83,24.27,2.62,49.59,12.39,49.59,40.5s-26.19,39.63-53.61,39.81c-22,.17-37.71-3.67-54.65-21.48l19.03-21.82c12.05,11.7,25.49,13.79,35.79,13.79,11.35,0,19.21-4.02,19.21-10.83,0-6.11-6.98-9.95-20.43-11.17-26.71-2.45-49.76-9.25-49.76-39.63,0-25.84,25.31-37.01,51.16-37.01,18.33,0,32.65,4.19,45.74,14.49l-17.11,21.82Z"/></svg>
+          <span class="eh-div" aria-hidden="true"></span>
+          <span class="eh-tag">ЦИФРОВЫЕ СОТРУДНИКИ</span>
+        </span>
+      </a>
+      <div class="footer-note">Подготовлено на основе исходной книги и предоставленных чеков</div>
+    </div>
+  </footer>
+
+  <script>
+(function(){
+  var root=document.documentElement;
+  var body=document.body;
+  var button=document.querySelector('.theme-toggle');
+  var icon=document.querySelector('.theme-toggle-icon');
+  var text=document.querySelector('.theme-toggle-text');
+  var currentTheme='light';
+  try{var savedTheme=localStorage.getItem('eggheads-theme');if(savedTheme==='dark'||savedTheme==='light')currentTheme=savedTheme}catch(error){}
+  function applyTheme(theme){
+    root.setAttribute('data-theme',theme);
+    body.setAttribute('data-theme',theme);
+    if(button)button.setAttribute('aria-pressed',String(theme==='dark'));
+    if(icon)icon.textContent=theme==='dark'?'☾':'☀';
+    if(text)text.textContent=theme==='dark'?'Тёмная':'Светлая';
+    try{localStorage.setItem('eggheads-theme',theme)}catch(error){}
+  }
+  applyTheme(currentTheme);
+  if(button)button.addEventListener('click',function(){var nextTheme=root.getAttribute('data-theme')==='dark'?'light':'dark';applyTheme(nextTheme)});
+})();
+  </script>
+  <script id="eh-logo-script">
+(function(){
+  function initLogo(logo){
+    var head=logo.querySelector('.eh-head');
+    if(!head)return;
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+    var count=0,last=0,busy=false;
+    head.addEventListener('mouseenter',function(){
+      if(busy)return;
+      var now=Date.now();
+      if(now-last>1500)count=0;
+      last=now;
+      count++;
+      if(count>=2){count=0;burnout()}
+    });
+    function puffs(){
+      for(var i=0;i<7;i++){
+        var s=document.createElement('span');
+        s.className='eh-smoke';
+        var sz=7+Math.random()*11;
+        s.style.width=sz+'px';
+        s.style.height=sz+'px';
+        s.style.left=(3+Math.random()*11)+'px';
+        s.style.bottom=(Math.random()*7)+'px';
+        s.style.animation='eh-smoke '+(0.8+Math.random()*0.4).toFixed(2)+'s ease-out forwards';
+        s.style.animationDelay=(i*55)+'ms';
+        logo.appendChild(s);
+        (function(node){setTimeout(function(){node.remove()},1400+i*55)})(s);
+      }
+    }
+    function burnout(){
+      busy=true;
+      head.classList.add('is-burnout');
+      puffs();
+      setTimeout(puffs,150);
+      var done=function(){head.classList.remove('is-burnout');busy=false;head.removeEventListener('animationend',done)};
+      head.addEventListener('animationend',done);
+      setTimeout(function(){if(busy){head.classList.remove('is-burnout');busy=false}},2200);
+    }
+  }
+  document.querySelectorAll('.eh-logo').forEach(initLogo);
+})();
+  </script>
+
+<script>
+document.querySelectorAll('.month-tab').forEach((button) => {
+  button.addEventListener('click', () => {
+    const month = button.dataset.month;
+    document.querySelectorAll('.month-tab').forEach((item) => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-selected', String(active));
+    });
+    document.querySelectorAll('.month-tab-panel').forEach((panel) => {
+      panel.hidden = panel.id !== `month-${month}`;
+    });
+  });
+});
+</script>
+</body>
+</html>
